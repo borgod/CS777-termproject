@@ -38,6 +38,9 @@ Here we calculate our logistic regression model and then calculate the
 performance metrics for the classifier
 
 
+# Results
+
+![image Alt](https://github.com/borgod/CS777-termproject/blob/main/results_project.png?raw=true)
 
 
 
