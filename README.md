@@ -2,7 +2,7 @@
 # by Xioaning Zhang, Pearlrose Nwuke, and Boris Godoy
 
 
-This document explains how to use the file flighy.py
+# Description of the code
 
 Most important thing to set is the correct path for your file:
 
@@ -38,7 +38,7 @@ Here we calculate our logistic regression model and then calculate the
 performance metrics for the classifier
 
 
-# Data set
+# Exploration of the Data set
 
 ![image Alt](https://github.com/borgod/CS777-termproject/blob/main/graph01.png?raw=true)
 
@@ -63,7 +63,7 @@ The above image shows average departure delay by hour of the day
 The above image shows average departure delay by month of the year
 
 
-# Results
+# Preliminary Results
 
 ![image Alt](https://github.com/borgod/CS777-termproject/blob/main/results_project.png?raw=true)
 
