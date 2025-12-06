@@ -42,6 +42,14 @@ performance metrics for the classifier
 
 ![image Alt](https://github.com/borgod/CS777-termproject/blob/main/results_project.png?raw=true)
 
+Here, we created a table with the prediction of flights and the value ROC AUC. This value is modest so far, and it might be due to the limited dataset (we are researching the cause).
+
+
+
+
+
+
+
 
 
 
