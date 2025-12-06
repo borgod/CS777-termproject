@@ -42,8 +42,25 @@ performance metrics for the classifier
 
 ![image Alt](https://github.com/borgod/CS777-termproject/blob/main/graph01.png?raw=true)
 
+This image shows data the 20-most delayed routes in the dataset
 
 
+
+![image Alt](https://github.com/borgod/CS777-termproject/blob/main/graph02.png?raw=true)
+
+This image shows data the 20-most delayed origin airports
+
+
+![image Alt](https://github.com/borgod/CS777-termproject/blob/main/graph03.png?raw=true)
+JetBlue is the airline with the worst departure delay
+
+
+
+![image Alt](https://github.com/borgod/CS777-termproject/blob/main/graph04.png?raw=true)
+The average departure delay by hour of the day
+
+![image Alt](https://github.com/borgod/CS777-termproject/blob/main/graph05.png?raw=true)
+The average departure delay by month of the year
 
 
 # Results
