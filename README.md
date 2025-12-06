@@ -42,32 +42,32 @@ performance metrics for the classifier
 
 ![image Alt](https://github.com/borgod/CS777-termproject/blob/main/graph01.png?raw=true)
 
-This image shows data the 20-most delayed routes in the dataset
+The above image shows data the 20-most delayed routes in the dataset
 
 
 
 ![image Alt](https://github.com/borgod/CS777-termproject/blob/main/graph02.png?raw=true)
 
-This image shows data the 20-most delayed origin airports
+The above image shows data the 20-most delayed origin airports
 
 
 ![image Alt](https://github.com/borgod/CS777-termproject/blob/main/graph03.png?raw=true)
-JetBlue is the airline with the worst departure delay
+The above image shows JetBlue as the airline with the worst departure delay
 
 
 
 ![image Alt](https://github.com/borgod/CS777-termproject/blob/main/graph04.png?raw=true)
-The average departure delay by hour of the day
+The above image shows average departure delay by hour of the day
 
 ![image Alt](https://github.com/borgod/CS777-termproject/blob/main/graph05.png?raw=true)
-The average departure delay by month of the year
+The above image shows average departure delay by month of the year
 
 
 # Results
 
 ![image Alt](https://github.com/borgod/CS777-termproject/blob/main/results_project.png?raw=true)
 
-Here, we created a table with the prediction of flights and the value ROC AUC. This value is modest so far, and it might be due to the limited dataset (we are researching the cause).
+Here, we created a table with the prediction of flights and the value ROC AUC. This value is modest so far, and it might be due to the limited dataset (we are researching the cause). We will know when we run the code with the big dataset in the cloud.
 
 
 
