@@ -13,9 +13,12 @@ pipeline, or simply crun it by the 3 main sections and run it as a
 Jupyter notebook
 
 # 1st section 
-# Prepare historical delay features 
-to #Create DataFrame
+We read the dataset and extract the rows of interest for the
+classifier
 
+All relevant data is in the variable :
+
+selected = rows.map(safe_convert).filter(lambda x: x is not None)
 
 
 # 2nd section 
@@ -24,7 +27,10 @@ regression.
 
 We then do feature engineering, that is, creating some features from
 the original ones. This goes from Create Data Frame to Train/test split
-  
+
+Since logistic regression only works with numerical data, we need to encode
+the categorical important data. We do that also in this section
+
 
 # 3rd section
 
