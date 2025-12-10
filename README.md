@@ -2,15 +2,70 @@
 # by Xioaning Zhang, Pearlrose Nwuke, and Boris Godoy
 
 
-# Description of the code
+# Description of the files
+==========================
 
-Most important thing to set is the correct path for your file:
+We basically have 3 python files, one of each corresponding to a 
+different classifier.
 
-path = "/Documents/..../yourfile.csv "
+We also have 1 file, which is a sample version of the entire dataset.
+
+# Logistic regression classifier - lr_classifier.py
+----------------------------------------------------
+
+This files calculates the logistic regression classifier, and also 
+it calculates its performance.
+
+The pipeline is self-contained, and the user only needs to run
+the file in a terminal :
+
+$python lr_classifier.py 
+
+The performance metrics will print out at the end, as well a model will be saved 
+for future use.
+
+# Random Forrest classifier - rf_classifier.py
+-----------------------------------------------
+
+This files calculates the random forrest classifier, and also 
+it calculates its performance.
+
+The pipeline is self-contained, and the user only needs to run
+the file in a terminal :
+
+$python rf_classifier.py
+
+The performance metrics will print out at the end, as well a model will be saved 
+for future use.
+
+
+# Gradient-boosted trees  - gbt_classifier.py
+----------------------------------------------
+
+This files calculates the gradient-boosted trees classifier, and also 
+it calculates its performance.
+
+The pipeline is self-contained, and the user only needs to run
+the file in a terminal :
+
+$python gbt_classifier.py 
+
+The results of the software will print out at the end, as well a model will be saved 
+for future use
+
+The user only to make sure to add the correct path at the beginning of each
+file.
+
+path = "/Documents/..../your_flight_dataset.csv "
 
 Once you have set up the correct path, then you can run the whole
-pipeline, or simply crun it by the 3 main sections and run it as a 
-Jupyter notebook
+pipeline, or simply run it by the 3 main sections and run it in a 
+Jupyter notebook (you need to copy/past the sections).
+
+
+# Common aspects common to each of the files
+
+We can say that each of the files are composed of 3 sections, and they can run sequentially
 
 # 1st section 
 We read the dataset and extract the rows of interest for the
@@ -20,25 +75,59 @@ All relevant data is in the variable :
 
 selected = rows.map(safe_convert).filter(lambda x: x is not None)
 
-
 # 2nd section 
-We create a dataframe because we use the library embedded for logistic 
-regression. 
+We create a dataframe because we use the embedded library  for classifiers.
 
 We then do feature engineering, that is, creating some features from
 the original ones. This goes from Create Data Frame to Train/test split
 
-Since logistic regression only works with numerical data, we need to encode
-the categorical important data. We do that also in this section
-
+In the logistic regression classifier, an enconder is used to take
+the categorical variables because it only can take numerical values.
 
 # 3rd section
+Here we calculate our respective classifier (lr, gbt, or rf), and then the
+performance metrics are printed out for each of them.
 
-Here we calculate our logistic regression model and then calculate the
-performance metrics for the classifier
+
+# Environment setup
+===================
+
+Here, we describe all dependencies, libraries, versions, and setup steps 
+necessary to reproduce the environment.
+
+Python
+------
+-. Python 3.8 
+
+Java/JVM
+--------
+PySpark requires a Java Runtime Environment (JRE) or JDK
+
+-. Minimum: Java 8 (1.8)
+-. Recommended: OpenJDK 11 or Java 17
+-. Make sure JAVA_HOME is set:
+
+$java -version
+$export JAVA_HOME=/path/to/java
+
+Apache Spark
+------------
+-. PySpark 3.x is recommended
+-. Spark version should match Hadoop compatibility if using HDFS, but for local mode, any 3.x is fine
+-. Apache Spark 3.5.0 (binary pre-built for Hadoop 3.3 or later)
+
+Key Python libraries
+---------------------
+
+-. Apache Spark 3.5.0 (binary pre-built for Hadoop 3.3 or later)
+-. numpy 1.24+ 
+-. pandas 1.6+
+-. matplotlib/seaborn latest
 
 
-# Exploration of the Data set
+
+# Exploration of the Data set and results
+=========================================
 
 ![image Alt](https://github.com/borgod/CS777-termproject/blob/main/graph01.png?raw=true)
 
