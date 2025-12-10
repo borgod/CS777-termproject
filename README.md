@@ -104,27 +104,36 @@ Java/JVM
 PySpark requires a Java Runtime Environment (JRE) or JDK
 
 -. Minimum: Java 8 (1.8)
+
 -. Recommended: OpenJDK 11 or Java 17
+
 -. Make sure JAVA_HOME is set:
 
 $java -version
+
 $export JAVA_HOME=/path/to/java
 
 Apache Spark
 ------------
 -. PySpark 3.x is recommended
+
 -. Spark version should match Hadoop compatibility if using HDFS, but for local mode, any 3.x is fine
+
 -. Apache Spark 3.5.0 (binary pre-built for Hadoop 3.3 or later)
 
 Key Python libraries
 ---------------------
 
 -. Apache Spark 3.5.0 (binary pre-built for Hadoop 3.3 or later)
+
 -. numpy 1.24+ 
+
 -. pandas 1.6+
+
 -. matplotlib/seaborn latest
 
 
+Ems
 
 # Exploration of the Data set and results
 =========================================
