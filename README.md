@@ -13,7 +13,7 @@ We also have 1 file, which is a sample version of the entire dataset.
 # Logistic regression classifier - lr_classifier.py
 ----------------------------------------------------
 
-This files calculates the logistic regression classifier, and also 
+This file calculates the logistic regression classifier, and also 
 it calculates its performance.
 
 The pipeline is self-contained, and the user only needs to run
@@ -21,13 +21,13 @@ the file in a terminal :
 
 $python lr_classifier.py 
 
-The performance metrics will print out at the end, as well a model will be saved 
+The performance metrics will print out at the end, as well the model will be saved 
 for future use.
 
-# Random Forrest classifier - rf_classifier.py
+# Random Forest classifier - rf_classifier.py
 -----------------------------------------------
 
-This files calculates the random forrest classifier, and also 
+This file calculates the random forest classifier, and also 
 it calculates its performance.
 
 The pipeline is self-contained, and the user only needs to run
@@ -42,7 +42,7 @@ for future use.
 # Gradient-boosted trees  - gbt_classifier.py
 ----------------------------------------------
 
-This files calculates the gradient-boosted trees classifier, and also 
+This file calculates the gradient-boosted trees classifier, and also 
 it calculates its performance.
 
 The pipeline is self-contained, and the user only needs to run
@@ -51,35 +51,35 @@ the file in a terminal :
 $python gbt_classifier.py 
 
 The results of the software will print out at the end, as well a model will be saved 
-for future use
+for future use.
 
 The user only to make sure to add the correct path at the beginning of each
 file.
 
 path = "/Documents/..../your_flight_dataset.csv "
 
-Once you have set up the correct path, then you can run the whole
-pipeline, or simply run it by the 3 main sections and run it in a 
-Jupyter notebook (you need to copy/past the sections).
+Once the user has set up the correct path, then it can run the whole
+pipeline, or simply run it by secions in Jupyter notebook (user needs 
+to copy/past the sections). 
 
 
-# Common aspects common to each of the files
+# Common aspects to each of the files
 
-We can say that each of the files are composed of 3 sections, and they can run sequentially
+We can say that each of the files are composed of 3 sections, and the sections run sequentially
 
 # 1st section 
 We read the dataset and extract the rows of interest for the
-classifier
+classifier.
 
 All relevant data is in the variable :
 
 selected = rows.map(safe_convert).filter(lambda x: x is not None)
 
 # 2nd section 
-We create a dataframe because we use the embedded library  for classifiers.
+We create a dataframe to use the embedded library  for classifiers.
 
-We then do feature engineering, that is, creating some features from
-the original ones. This goes from Create Data Frame to Train/test split
+We then do feature engineering, that is, creating some new features from
+the original ones. 
 
 In the logistic regression classifier, an enconder is used to take
 the categorical variables because it only can take numerical values.
@@ -115,7 +115,7 @@ $export JAVA_HOME=/path/to/java
 
 Apache Spark
 ------------
--. PySpark 3.x is recommended
+-. PySpark 3.x recommended
 
 -. Spark version should match Hadoop compatibility if using HDFS, but for local mode, any 3.x is fine
 
@@ -133,7 +133,6 @@ Key Python libraries
 -. matplotlib/seaborn latest
 
 
-Ems
 
 # Exploration of the Data set and results
 =========================================
@@ -161,7 +160,7 @@ The above image shows average departure delay by hour of the day
 The above image shows average departure delay by month of the year
 
 
-# Preliminary Results
+# Results
 
 ![image Alt](https://github.com/borgod/CS777-termproject/blob/main/results_project.png?raw=true)
 
