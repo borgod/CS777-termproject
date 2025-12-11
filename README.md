@@ -103,7 +103,7 @@ Java/JVM
 --------
 PySpark requires a Java Runtime Environment (JRE) or JDK
 
--. Minimum: Java 8 (1.8)
+-. Minimum: Java 11
 
 -. Recommended: OpenJDK 11 or Java 17
 
