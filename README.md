@@ -5,67 +5,68 @@
 # Description of the files
 ==========================
 
-We basically have 3 python files, one of each corresponding to a 
-different classifier.
+We basically have 1 python file (flight_prediction_v02.py)
 
 We also have 1 file, which is a sample version of the entire dataset.
 
-# Logistic regression classifier - lr_classifier.py
+# Logistic regression classifier - See section 3A
 ----------------------------------------------------
 
-This file calculates the logistic regression classifier, and also 
-it calculates its performance.
+This part of the code calculates the logistic regression classifier, and also 
+it calculates its performance for a small grid of hyperparameter values.
 
 The pipeline is self-contained, and the user only needs to run
 the file in a terminal :
 
-$python lr_classifier.py 
+$python flight_prediction_v02.py 
 
-The performance metrics will print out at the end, as well the model will be saved 
-for future use.
+The performance metrics will print out at the end.
 
-# Random Forest classifier - rf_classifier.py
+# Random Forest classifier - See section 3B
 -----------------------------------------------
 
-This file calculates the random forest classifier, and also 
+Because the pipeline for the pre-processing and feature
+engineering are common to the all the classifiers, then 
+rather than making 3 separate files, we have created only
+1 file that can obtain the classifier sequentially
+
+In Section 3B, we have the random forest classifier, and also 
 it calculates its performance.
 
 The pipeline is self-contained, and the user only needs to run
 the file in a terminal :
 
-$python rf_classifier.py
+$python flight_prediction_v02.py 
 
-The performance metrics will print out at the end, as well a model will be saved 
-for future use.
+The performance metrics will print out at the end.
 
 
-# Gradient-boosted trees  - gbt_classifier.py
+# Gradient-boosted trees  - See section 3C
 ----------------------------------------------
 
-This file calculates the gradient-boosted trees classifier, and also 
-it calculates its performance.
+We run this classifier after the other 2, logistic regression
+and randon forest have been obtained.
 
 The pipeline is self-contained, and the user only needs to run
 the file in a terminal :
 
-$python gbt_classifier.py 
+$python flight_prediction_v02.py 
 
-The results of the software will print out at the end, as well a model will be saved 
-for future use.
+The results of the software will print out at the end.
 
 The user only to make sure to add the correct path at the beginning of each
 file.
 
-path = "/Documents/..../your_flight_dataset.csv "
+path = "/Documents/..../your_flight_dataset.csv " or
+alternative whatever location you have on the cloud e.g.
+path = path = "gs://data-flights/flights_sample_3m.csv"
 
 Once the user has set up the correct path, then it can run the whole
 pipeline, or simply run it by secions in Jupyter notebook (user needs 
-to copy/past the sections). 
+to copy/past the sections). Notice that section 1 and 2 are common to 
+sections 3A, 3B, and 3C. These ones only depend upon sections 1, and 2.
 
-
-# Common aspects to each of the files
-
-We can say that each of the files are composed of 3 sections, and the sections run sequentially
+# Aspects about the file
 
 # 1st section 
 We read the dataset and extract the rows of interest for the
@@ -81,11 +82,9 @@ We create a dataframe to use the embedded library  for classifiers.
 We then do feature engineering, that is, creating some new features from
 the original ones. 
 
-In the logistic regression classifier, an enconder is used to take
-the categorical variables because it only can take numerical values.
 
-# 3rd section
-Here we calculate our respective classifier (lr, gbt, or rf), and then the
+# 3rd section, A,B, and C
+Here we calculate our respective classifiers (lr, rf, gbt), and then the
 performance metrics are printed out for each of them.
 
 
@@ -162,10 +161,17 @@ The above image shows average departure delay by month of the year
 
 # Results
 
+We have basically 3 tables to show, and they are produced by sections 3A, 3B, and 3C, 
+respectively.
+
+
+![image Alt]
+
+![image Alt]
+
+![image Alt]
+
 ![image Alt](https://github.com/borgod/CS777-termproject/blob/main/results_project.png?raw=true)
-
-Here, we created a table with the prediction of flights and the value ROC AUC. This value is modest so far, and it might be due to the limited dataset (we are researching the cause). We will know when we run the code with the big dataset in the cloud.
-
 
 
 
