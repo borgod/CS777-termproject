@@ -165,13 +165,11 @@ We have basically 3 tables to show, and they are produced by sections 3A, 3B, an
 respectively.
 
 
-![image Alt]
+![image Alt](https://github.com/borgod/CS777-termproject/blob/main/results_table1.png?raw=true)
 
-![image Alt]
+![image Alt](https://github.com/borgod/CS777-termproject/blob/main/results_table2.png?raw=true)
 
-![image Alt]
-
-![image Alt](https://github.com/borgod/CS777-termproject/blob/main/results_project.png?raw=true)
+![image Alt](https://github.com/borgod/CS777-termproject/blob/main/results_table3.png?raw=true)
 
 
 
