@@ -162,7 +162,7 @@ The above image shows average departure delay by month of the year
 # Results
 
 We have basically 3 tables to show, and they are produced by sections 3A, 3B, and 3C, 
-respectively.
+respectively. They can run individually since they depend only upon sections 1 and 2.
 
 
 ![image Alt](https://github.com/borgod/CS777-termproject/blob/main/results_table1.png?raw=true)
